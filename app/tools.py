@@ -110,7 +110,7 @@ def stock_by_warehouse(product_id: int) -> dict:
         "total_qty": total_qty,
     }
     
-    REQUIRED_FIELDS = ["name", "category", "net_wt_oz", "net_vol_ml", "nicotine_mg"]
+REQUIRED_FIELDS = ["name", "category", "net_wt_oz", "net_vol_ml", "nicotine_mg"]
 
 # Extra documents required per category
 DOCS_BY_CATEGORY = {

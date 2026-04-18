@@ -62,6 +62,8 @@ def chat(payload: ChatRequest):
     request_id = str(uuid.uuid4())
     total_start = time.time()
     
+    user_type = validate_user_type(payload.user_type)
+    
     user_message = payload.message
     session_id = payload.session_id
     session_id, session_data = get_or_create_session(session_id)
